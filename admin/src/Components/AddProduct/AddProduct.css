@@ -12,7 +12,7 @@ add-product{
     color: #7b7b7b;
     font-size: 16px;
 }
-.addproduct-itemfield-input{
+.addproduct-itemfield input{
     box-sizing: border-box;
     width: 100%;
     height: 50px;
@@ -28,14 +28,15 @@ add-product{
     display: flex;
     gap: 40px;
 }
-.addproduct-selector{
-    padding: 10px;
+.add-product-selector{
+    padding:10px;
     width: 100px;
     height: 50px;
     font-size: 14px;
     color: #7b7b7b;
     border: 1px solid #7b7b7b8d;
     border-radius: 4px;
+    margin-bottom: 10px;
 }
 .addproduct-thumbnail-img{
     height: 120px;
