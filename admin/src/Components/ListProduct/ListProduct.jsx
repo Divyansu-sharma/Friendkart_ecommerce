@@ -27,9 +27,6 @@ const ListProduct = () => {
       await fetchInfo();
     }
 
-    const fixImageUrl = (imageUrl) => {
-      return imageUrl.replace("http:", "http://");
-    };
 
   return (
     <div className='list-product'>
@@ -46,7 +43,7 @@ const ListProduct = () => {
         <hr />
         {allproducts.map((product,index)=>{
             return <><div key={index} className="listproduct-format-main listproduct-format">
-              <img className="listproduct-product-icon" src={fixImageUrl(product.image)} alt="" />
+              <img className="listproduct-product-icon" src={product.image} alt="" />
               <p>{product.name}</p>
               <p>₹{product.old_price}</p>
               <p>₹{product.new_price}</p>
